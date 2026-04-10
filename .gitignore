@@ -1,0 +1,31 @@
+# Terraform - Diretório local de providers e plugins
+.terraform/
+!.terraform.lock.hcl
+
+# Arquivos de plano (podem conter dados sensíveis)
+*.tfplan
+tfplan
+
+# Arquivos de estado (contém dados sensíveis da infra)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Variáveis com valores sensíveis
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Arquivos de crash log
+crash.log
+crash.*.log
+
+# Override files (usados localmente)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
